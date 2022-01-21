@@ -1,3 +1,4 @@
+//Sets generateBtn to the #generate id in HTML file
 var generateBtn = document.querySelector("#generate");
 
 //Function for length of the password
@@ -59,7 +60,7 @@ function generatePassword() {
 function writePassword() {
   let password = generatePassword();
   let passwordText = document.querySelector("#password");
-  passwordText.value = password;
+  passwordText.value = password; //Replaces text in the #password id with generated password
 }
 
 //Listens for a click on the generate password button to run writePassword function
